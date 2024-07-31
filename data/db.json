@@ -1,0 +1,331 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODgvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoiQW5hcyIsImxhc3RuYW1lIjoiQk9VTkFJTSIsImVtYWlsIjoiQlVAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdfQ.wqf8O6xBIeFATsn0foocaZ0obJMgcrM-xKC8tCW7Nhg"
+    },
+    {
+      "id": "user2",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODgvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoiQW5hcyIsImxhc3RuYW1lIjoiQk9VTkFJTSIsImVtYWlsIjoiQlVAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdfQ.pAyM_G6NpNMEvmmR2-ypDDQ94m_q3TrcVriopa1fiC4"
+    },
+    {
+      "id": "admin",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER",
+        "ADMIN"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODgvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoiQW5hcyIsImxhc3RuYW1lIjoiQk9VTkFJTSIsImVtYWlsIjoiQlVAZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiIsIkFETUlOIl19.iK4AxA3MmwcqCD5xMqpUC5bzwvtbs187I4Qxg6GLTnU"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Headphones",
+      "checked": false,
+      "price": "2000"
+    },
+    {
+      "id": "2",
+      "name": "Laptop",
+      "checked": false,
+      "price": 9000
+    },
+    {
+      "id": "3",
+      "name": "Gaming PC",
+      "price": 15000,
+      "checked": true
+    },
+    {
+      "id": "4",
+      "name": "Tablet",
+      "price": 5000,
+      "checked": true
+    },
+    {
+      "id": "5",
+      "name": "Smartphone",
+      "price": 8000,
+      "checked": true
+    },
+    {
+      "id": "6",
+      "name": "External Hard Drive",
+      "price": 2000,
+      "checked": false
+    },
+    {
+      "id": "7",
+      "name": "SSD",
+      "price": 3000,
+      "checked": true
+    },
+    {
+      "id": "8",
+      "name": "Graphics Card",
+      "price": 12000,
+      "checked": false
+    },
+    {
+      "id": "9",
+      "name": "RAM Module",
+      "price": 1500,
+      "checked": true
+    },
+    {
+      "id": "10",
+      "name": "CPU Processor",
+      "price": 8000,
+      "checked": false
+    },
+    {
+      "id": "11",
+      "name": "Motherboard",
+      "price": 4000,
+      "checked": true
+    },
+    {
+      "id": "12",
+      "name": "Monitor",
+      "price": 3000,
+      "checked": true
+    },
+    {
+      "id": "13",
+      "name": "Keyboard",
+      "price": 1000,
+      "checked": true
+    },
+    {
+      "id": "14",
+      "name": "Mouse",
+      "price": 800,
+      "checked": false
+    },
+    {
+      "id": "15",
+      "name": "Webcam",
+      "price": 1200,
+      "checked": true
+    },
+    {
+      "id": "16",
+      "name": "Router",
+      "price": 2200,
+      "checked": false
+    },
+    {
+      "id": "17",
+      "name": "USB Flash Drive",
+      "price": 500,
+      "checked": false
+    },
+    {
+      "id": "18",
+      "name": "Speaker System",
+      "price": 2500,
+      "checked": false
+    },
+    {
+      "id": "19",
+      "name": "Microphone",
+      "price": 1100,
+      "checked": true
+    },
+    {
+      "id": "20",
+      "name": "Printer",
+      "price": 4500,
+      "checked": true
+    },
+    {
+      "id": "21",
+      "name": "Projector",
+      "price": 7600,
+      "checked": false
+    },
+    {
+      "id": "22",
+      "name": "Scanner",
+      "price": 3200,
+      "checked": false
+    },
+    {
+      "id": "23",
+      "name": "Network Switch",
+      "price": 1800,
+      "checked": false
+    },
+    {
+      "id": "24",
+      "name": "Modem",
+      "price": 1500,
+      "checked": true
+    },
+    {
+      "id": "25",
+      "name": "Charger",
+      "price": 300,
+      "checked": true
+    },
+    {
+      "id": "26",
+      "name": "Power Bank",
+      "price": 2500,
+      "checked": false
+    },
+    {
+      "id": "27",
+      "name": "VR Headset",
+      "price": 9400,
+      "checked": true
+    },
+    {
+      "id": "28",
+      "name": "Smart Watch",
+      "price": 4200,
+      "checked": true
+    },
+    {
+      "id": "29",
+      "name": "Fitness Tracker",
+      "price": 980,
+      "checked": false
+    },
+    {
+      "id": "30",
+      "name": "Drone",
+      "price": 14500,
+      "checked": false
+    },
+    {
+      "id": "31",
+      "name": "Digital Camera",
+      "price": 9000,
+      "checked": true
+    },
+    {
+      "id": "32",
+      "name": "Camcorder",
+      "price": 6200,
+      "checked": false
+    },
+    {
+      "id": "33",
+      "name": "Action Camera",
+      "price": 3500,
+      "checked": true
+    },
+    {
+      "id": "34",
+      "name": "Photo Printer",
+      "price": 5500,
+      "checked": false
+    },
+    {
+      "id": "35",
+      "name": "Tripod",
+      "price": 750,
+      "checked": true
+    },
+    {
+      "id": "36",
+      "name": "Lens",
+      "price": 10000,
+      "checked": false
+    },
+    {
+      "id": "37",
+      "name": "Memory Card",
+      "price": 600,
+      "checked": true
+    },
+    {
+      "id": "38",
+      "name": "Lighting Kit",
+      "price": 2900,
+      "checked": false
+    },
+    {
+      "id": "39",
+      "name": "Backdrop",
+      "price": 1100,
+      "checked": true
+    },
+    {
+      "id": "40",
+      "name": "Wind Screen",
+      "price": 500,
+      "checked": false
+    },
+    {
+      "id": "41",
+      "name": "Microphone Stand",
+      "price": 1200,
+      "checked": true
+    },
+    {
+      "id": "42",
+      "name": "Audio Mixer",
+      "price": 4500,
+      "checked": false
+    },
+    {
+      "id": "43",
+      "name": "DJ Controller",
+      "price": 5000,
+      "checked": true
+    },
+    {
+      "id": "44",
+      "name": "Electric Guitar",
+      "price": 12000,
+      "checked": false
+    },
+    {
+      "id": "45",
+      "name": "Acoustic Guitar",
+      "price": 8000,
+      "checked": true
+    },
+    {
+      "id": "46",
+      "name": "Piano Keyboard",
+      "price": 11000,
+      "checked": true
+    },
+    {
+      "id": "47",
+      "name": "Drum Set",
+      "price": 22000,
+      "checked": true
+    },
+    {
+      "id": "48",
+      "name": "Xylophone",
+      "price": 4200,
+      "checked": false
+    },
+    {
+      "id": "49",
+      "name": "Violin",
+      "price": 3500,
+      "checked": true
+    },
+    {
+      "id": "50",
+      "name": "Saxophone",
+      "price": 9800,
+      "checked": false
+    }
+  ]
+}

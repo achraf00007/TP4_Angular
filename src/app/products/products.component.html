@@ -1,0 +1,70 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex justify-content-between mb-2">
+        <input [(ngModel)]="appState.productsState.keyword" type="text" class="form-control me-2" placeholder="Search...">
+        <button (click)="getProducts()" class="btn btn-outline-dark"><i class="bi bi-search"></i></button>
+      </div>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th class="text-center" *ngIf="appState.authState.roles.includes('ADMIN')">Checked</th>
+          </tr>
+          </thead>
+          <tbody *ngIf="appState.productsState.products.length">
+          <tr *ngFor="let product of appState.productsState.products">
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td class="text-center" *ngIf="appState.authState.roles.includes('ADMIN')">
+              <button (click)="handleCheckProduct(product)" class="btn btn-outline-light">
+                <i [class]="product.checked ? 'bi bi-check-lg text-success' : 'bi bi-x-lg text-danger'"></i>
+              </button>
+            </td>
+            <td class="text-center" *ngIf="appState.authState.roles.includes('ADMIN')">
+              <button (click)="deleteProduct(product)" class="btn btn-danger">
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+            <td class="text-center" *ngIf="appState.authState.roles.includes('ADMIN')">
+              <button (click)="editProduct(product)" class="btn btn-primary">
+                <i class="bi bi-pencil"></i>
+              </button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+<!--      <div class="container">
+        <div class="row justify-content-between mt-3">
+          <div class="col-auto">
+            <button (click)="previousPage()" class="btn btn-outline-dark" [disabled]="currentPage === 1">
+              <i class="bi bi-chevron-left"></i> Previous
+            </button>
+          </div>
+          <div class="col-auto">
+            <button (click)="nextPage()" class="btn btn-outline-dark" [disabled]="products.length < pageSize">
+              Next <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>-->
+
+      <div>
+        <ul class="nav nav-pills">
+          <li  *ngFor="let page of [].constructor(appState.productsState.totalPages); let i=index">
+            <button (click)="handleGotoPage(i + 1)"
+            [ngClass]="appState.productsState.currentPage==(i+1)?'btn btn-success m-1':'btn btn-outline-success m-1'"
+            >
+              {{(i + 1)}}
+            </button>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>

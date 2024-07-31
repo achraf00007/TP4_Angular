@@ -1,0 +1,30 @@
+<nav class="p-3 navbar">
+  <ul class="nav nav-pills">
+    <li *ngFor="let action of actions" class="nav-item">
+      <button
+        (click)="setCurrentAction(action)"
+        [class]="action === currentAction ? 'btn btn-primary ms-1 custom-' + action.icon + '-color' : 'btn btn-outline-primary ms-1 custom-' + action.icon + '-color'"
+        [routerLink]="action.route">
+        <i class="bi" [class]="'bi-' + action.icon + ' custom-home-color'"></i> {{action.title}}
+      </button>
+    </li>
+    <li *ngIf="ls.isLoading$ | async">
+      <div class="spinner-border text-primary ms-4" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </li>
+  </ul>
+  <ul class="nav nav-pills ms-auto">
+    <li *ngIf="appState.authState.isAutenticated">
+      <span class="p-1 m-1 text-success">{{appState.authState.username}}</span>
+      <button (click)="handleLogout()" class="btn btn-outline-success">
+        <i class="bi bi-door-closed-fill"></i>
+      </button>
+    </li>
+    <li *ngIf="!appState.authState.isAutenticated">
+      <button (click)="handleLogin()"  class="btn btn-outline-success">
+        <i class="bi bi-door-open-fill"></i>
+      </button>
+    </li>
+  </ul>
+</nav>

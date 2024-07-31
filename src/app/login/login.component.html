@@ -1,0 +1,22 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-header">Authentication</div>
+    <div class="alert alert-danger" *ngIf="errorMessage">
+      {{errorMessage}}
+    </div>
+    <div class="card-body">
+      <form [formGroup]="formLogin" (ngSubmit)="handleLogin()">
+        <div class="mb-3">
+          <Label>Username</Label>
+          <input type="text" class="form-control" formControlName="username">
+        </div>
+        <div class="mb-3">
+          <Label>Password</Label>
+          <input type="password" class="form-control" formControlName="password">
+        </div>
+
+        <button class="btn btn-success">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
